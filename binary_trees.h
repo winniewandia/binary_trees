@@ -44,5 +44,7 @@ int tree_is_leaf(const binary_tree_t *node);
 size_t binary_tree_nodes(const binary_tree_t *tree);
 int node_is_parent(const binary_tree_t *node);
 int binary_tree_balance(const binary_tree_t *tree);
+int binary_tree_is_full(const binary_tree_t *tree);
+int parent_is_full(const binary_tree_t *node);
 
 #endif
