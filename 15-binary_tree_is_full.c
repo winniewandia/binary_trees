@@ -1,4 +1,18 @@
 #include "binary_trees.h"
+/**
+ * tree_is_leaf - checks if a node is a leaf
+ * @node: node to be checked
+ *
+ * Return: 1 if node is a leaf otherwise 0
+ */
+int tree_is_leaf(const binary_tree_t *node)
+{
+	int count = 0;
+
+	if (node && !(node->left) && !(node->right))
+		count = 1;
+	return (count);
+}
 
 /**
  * parent_is_full - checks if a node has 2 children
